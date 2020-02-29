@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.hero{
+    height: 100vh;
+   
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.6))), url(images/burger.jpg);
+   
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(images/burger.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+    
+}
+
+.navbar{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 40px 120px;
+    
+}
+
+.navlogo {
+    width: 135px;
+    color: white;
+    letter-spacing: 8px;
+    font-size: 30px;
+}
+
+.navlinks{
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.navlinks ul{
+    margin-left: 50px;
+    display: inline;
+}
+
+.navlinks ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 25px;
+}
+
+.navlinks ul a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px; 
+}
+
+.navlinks ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: yellow;
+    display: block;
+    margin: auto;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.navlinks ul li: hover::after{
+    width: 100%;
+    
+}
+
+.btn{
+    padding: 10px 20px;
+    border: 0;
+    background: orange;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navlinks .btn{
+    float: right;
+}
